@@ -1,6 +1,6 @@
 body {
-    background-color: #0051ff !important; 
-   
+    background-color: #0051ff !important;
+
 }
 
 .quiz-card {
@@ -16,7 +16,7 @@ body {
 }
 
 .question-footer {
-    border-top: 1px solid rgba(0,0,0,0.4);
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
     padding-top: 12px;
     display: flex;
     justify-content: space-between;
