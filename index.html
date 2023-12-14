@@ -21,9 +21,7 @@
 
 
 </head>
-
 <body onload="init()">
-
   <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">Quizzapp</span>
@@ -31,12 +29,14 @@
   </nav>
   <div class="quizz-middle-container">
     <div class="card quiz-card">
-      <img src="./img/quiz.jpg" class="card-img-top" alt="Background">
-
+      <img  src="img/quiz.jpg" id="quizz-picture" class="card-img-top">
       <div class="card-body" id="end_screen" style="display: none;">
-        Quiz beendet!
+        <div class="text-center">Quiz beendet!</div>
+      <div><img class="width-100" src="./img/winner.png"></div>
+      <div class="text-center">
+        Du hast <b id="right-question"></b> Fragen von <b id="all-questions2"></b> richtig beantwortet.
       </div>
-
+    </div>
       <div class="card-body" id="question_body">
         <h5 id="questiontext" class="card-title">Frage</h5>
         <div class="card quiz-answer-card" onclick="answer('answer_1')">

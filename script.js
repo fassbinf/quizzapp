@@ -1,14 +1,18 @@
 let currentQuestion = 0;
+let rightAnswer = 0;
 
 function init() {
     document.getElementById('all-questions').innerHTML = questions.length;
+    document.getElementById('all-questions2').innerHTML = questions.length;
+    rightAnswerSelected();
     showQuestion();
 }
 
 function showQuestion() {
     if (currentQuestion >= questions.length) {
         document.getElementById('end_screen').style = '';
-        document.getElementById('question_body').style ="display: none"
+        document.getElementById('question_body').style ="display: none";
+        document.getElementById('quizz-picture').src = 'img./winner.png';
     }
     else {
     let question = questions[currentQuestion];  
@@ -29,6 +33,8 @@ function answer(selection) {
     let idOfRightAnswer = `answer_${question['right_answer']}`;
     if (selectedQuestionNumber == question['right_answer']) {
         document.getElementById(selection).parentNode.classList.add('bg-success')
+        rightAnswer ++;
+        rightAnswerSelected();
     }
     else {
         document.getElementById(selection).parentNode.classList.add('bg-danger')
@@ -58,4 +64,8 @@ document.getElementById('answer_4').parentNode.classList.remove('bg-success');
 
 function showQuestionNumber() {
     document.getElementById('currect-question').innerHTML = currentQuestion + 1;
+}
+
+function rightAnswerSelected () {
+    document.getElementById('right-question').innerHTML = rightAnswer;
 }
