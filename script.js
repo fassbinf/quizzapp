@@ -10,11 +10,16 @@ function init() {
 
 function showQuestion() {
     if (currentQuestion >= questions.length) {
-        document.getElementById('end_screen').style = '';
-        document.getElementById('question_body').style ="display: none";
-        document.getElementById('quizz-picture').src = 'img./winner.png';
+        document.getElementById('end-screen').style = '';
+        document.getElementById('question-body').style ="display: none";
+        document.getElementById('header-image').src = 'img/winner.png';
     }
-    else {
+    else { // Show question
+
+    let percent = (currentQuestion + 1) / questions.length;
+    percent = Math.round(percent * 100); 
+    document.getElementById('progress-bar').innerHTML = `${percent} %`; 
+    document.getElementById('progress-bar').style = `width:${percent}%;`; 
     let question = questions[currentQuestion];  
 
     showQuestionNumber();
@@ -68,4 +73,13 @@ function showQuestionNumber() {
 
 function rightAnswerSelected () {
     document.getElementById('right-question').innerHTML = rightAnswer;
+}
+
+function playAgain() {
+    document.getElementById('header-image').src = 'img/quiz.jpg';
+    document.getElementById('end-screen').style = 'display: none';
+    document.getElementById('question-body').style ='';
+    currentQuestion = 0;
+    rightAnswer = 0;
+    init();
 }
