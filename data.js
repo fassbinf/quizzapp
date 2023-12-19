@@ -64,10 +64,10 @@ let questions = [
         "right_answer": 4
     },
     {
-        "question": "Wie nennt man einenj jungen Hund?",
+        "question": "Wie nennt man einen jungen Hund?",
         "answer_1": "Fohlen",
         "answer_2": "Rüde",
-        "answer_3": "Welpen",
+        "answer_3": "Welpe",
         "answer_4": "Ferkel",
         "right_answer": 3
     },
@@ -112,8 +112,8 @@ let questions = [
         "right_answer": 2
     },
     {
-        "question": "Welches ist die am häufigsten gesprochenne Sprache auf der Welt?",
-        "answer_1": "Mandarin Chinesisch",
+        "question": "Welches ist die am häufigsten gesprochene Sprache auf der Welt?",
+        "answer_1": "Mandarin",
         "answer_2": "Japanisch",
         "answer_3": "Deutsch",
         "answer_4": "Spanisch",
@@ -154,7 +154,7 @@ let questions = [
     {
         "question": "Welches ist der kälteste Ort der Erde?",
         "answer_1": "Alaska",
-        "answer_2": "Sibieren",
+        "answer_2": "Sibirien",
         "answer_3": "Nordpol",
         "answer_4": "Antarktis",
         "right_answer": 4
@@ -169,10 +169,10 @@ let questions = [
     },
     {
         "question": "Welches dieser Tiere gibt es nicht?",
-        "answer_1": "Schee-Eule",
-        "answer_2": "Polar-Igel",
+        "answer_1": "Schneeeule",
+        "answer_2": "Polarigel",
         "answer_3": "Eisvogel",
-        "answer_4": "Wüsten-fuchs",
+        "answer_4": "Wüstenfuchs",
         "right_answer": 2
     }
 ];
